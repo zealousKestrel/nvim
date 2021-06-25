@@ -1,0 +1,54 @@
+
+snippet ifmain
+def $1():
+	pass
+if __name__ == '__main__':
+	${1:main}()
+endsnippet
+
+snippet for
+{% for $1 in $2 %}
+	$3
+{% endfor %}
+endsnippet
+
+snippet if
+{% if $1 %}
+	$2
+{% endif %}
+endsnippet
+
+snippet url
+{% url $1 %}
+endsnippet
+
+snippet extends
+{% extends "$1" %}
+endsnippet
+
+snippet csrf
+{% csrf_token %}
+endsnippet
+
+snippet fore
+{% for $1 in $2 %}
+	$3
+{% empty %}
+	$4
+{% endfor %}
+endsnippet
+
+snippet !
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$1</title>
+</head>
+<body>
+  $2
+</body>
+</html>
+endsnippet
